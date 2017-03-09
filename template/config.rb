@@ -1,3 +1,5 @@
+set :slim, pretty: true, format: html5
+
 activate :scss_lint
 
 activate :autoprefixer, browsers: [
