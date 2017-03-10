@@ -1,5 +1,5 @@
 require 'slim'
-set :slim, pretty: true, format: html5
+set :slim, pretty: true, format: :html
 
 activate :scss_lint
 
