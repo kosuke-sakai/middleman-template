@@ -1,6 +1,11 @@
 require 'slim'
 set :slim, pretty: true, format: :html
 
+set :js_dir, 'js'
+set :css_dir, 'scss'
+set :image_dir, 'img'
+
+
 activate :scss_lint
 
 activate :autoprefixer, browsers: [
@@ -16,6 +21,7 @@ activate :external_pipeline,
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  set :sass_source_maps, true
 end
 
 # Build-specific configuration
